@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gocciban Trans</title>
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #1a73e8, #00c6ff); /* Gradien keren */
+            color: #333;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.1); /* semi transparan */
+            color: white;
+            padding: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        header img {
+            width: 150px;
+            margin-bottom: 20px;
+            transition: transform 0.5s;
+        }
+
+        header img:hover {
+            transform: scale(1.1); /* efek hover logo */
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .button-whatsapp {
+            display: inline-block;
+            background-color: #25d366; /* Hijau WhatsApp */
+            color: white;
+            padding: 15px 35px;
+            font-size: 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .button-whatsapp:hover {
+            background-color: #1ebe57;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #ffffffcc; /* putih transparan */
+        }
+
+        /* Responsive untuk HP */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+            header p {
+                font-size: 16px;
+            }
+            .button-whatsapp {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Logo -->
+        <img src="logo.png" alt="Gocciban Trans Logo">
+
+        <h1>Gocciban Trans</h1>
+        <p>Layanan Transportasi Profesional, Aman & Terpercaya</p>
+
+        <!-- Tombol WhatsApp -->
+        <a class="button-whatsapp" href="https://wa.me/nomorWA" target="_blank">Hubungi Kami di WhatsApp</a>
+    </header>
+
+    <footer>
+        &copy; 2026 Gocciban Trans. All rights reserved.
+    </footer>
+
+</body>
+</html>
